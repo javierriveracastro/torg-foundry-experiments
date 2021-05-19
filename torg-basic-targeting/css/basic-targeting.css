@@ -1,0 +1,11 @@
+/* Torg basic targeting Styles */
+
+.tbt-crosshair {
+    margin-left: 4px;
+    font-size: 80%;
+}
+
+.tbt-crosshair:hover {
+    cursor: pointer;
+    box-shadow: 0 0 8px red;
+}
