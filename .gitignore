@@ -1,0 +1,4 @@
+py-src/__target__/
+torg-basic-targeting/scripts/
+.idea
+py-src/__pycache__/

@@ -1,0 +1,15 @@
+{
+  "name": "torg-basic-targeting",
+  "title": "Torg basic targeting",
+  "description": "A module that enables some targeting in Torg",
+  "compatibleCoreVersion": "0.7.9",
+  "version": "0.1",
+  "author": "Javier Rivera",
+  "systems": ["torgeternity"],
+  "esmodules": ["./scripts/main.js"],
+  "styles": [],
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "minimumCoreVersion": "0.7.9"
+}
