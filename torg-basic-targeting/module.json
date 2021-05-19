@@ -7,7 +7,7 @@
   "author": "Javier Rivera",
   "systems": ["torgeternity"],
   "esmodules": ["./scripts/main.js"],
-  "styles": [],
+  "styles": ["./css/basic-targeting.css"],
   "url": "",
   "manifest": "",
   "download": "",
