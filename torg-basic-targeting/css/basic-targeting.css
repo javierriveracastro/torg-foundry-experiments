@@ -9,3 +9,19 @@
     cursor: pointer;
     box-shadow: 0 0 8px red;
 }
+
+.tbt-fail {
+    color: red;
+}
+
+.tbt-success {
+    color: black;
+}
+
+.tbt-great {
+    color: blue;
+}
+
+.tbt-best {
+    color: green;
+}

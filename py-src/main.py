@@ -65,9 +65,18 @@ def modify_message(message, html):
                 trans_skill = game.i18n.localize(  # noqa
                     "torgeternity.skills." + defense)
                 current_skill = skills.get(defense)
-                content += '- {} ({}) = <strong>{}</strong><br>'.format(
-                    trans_skill, current_skill.value,
-                    roll_result - current_skill.value)
+                result_margin = roll_result - current_skill.value
+                if result_margin >= 10:
+                    result_color = "tbt-best"
+                elif result_margin >= 5:
+                    result_color = "tbt-great"
+                elif result_margin > 0:
+                    result_color = "tbt-success"
+                else:
+                    result_color = "tbt-fail"
+                content += '- {} ({}) = <strong class="{}">{}</strong><br>'.format(
+                    trans_skill, current_skill.value, result_color,
+                    result_margin)
 
         chatData = {'user': game.user._id,  # noqa
                     'type': CONST.CHAT_MESSAGE_TYPES.OOC,  # noqa
