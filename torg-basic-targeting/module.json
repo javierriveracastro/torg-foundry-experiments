@@ -8,8 +8,8 @@
   "systems": ["torgeternity"],
   "esmodules": ["./scripts/main.js"],
   "styles": ["./css/basic-targeting.css"],
-  "url": "",
-  "manifest": "",
+  "url": "https://github.com/javierriveracastro/torg-foundry-experiments/tree/master",
+  "manifest": "https://raw.githubusercontent.com/javierriveracastro/torg-foundry-experiments/master/torg-basic-targeting/module.json",
   "download": "",
   "minimumCoreVersion": "0.7.9"
 }
