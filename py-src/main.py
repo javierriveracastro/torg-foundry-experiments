@@ -33,6 +33,8 @@ def modify_message(message, html):
     """
     Changes message adding a cross (targeting icon)
     """
+    if not game.user.isGM:  # noqa
+        return
     roll_result_html = html.find('.skill-roll-result')
     try:
         roll_result = int(roll_result_html.text())
@@ -44,7 +46,6 @@ def modify_message(message, html):
     chat_title = html.find(".skill-chat-title").text()
     skill = find_skill(get_token_or_actor_from_message(message),
                        chat_title[:-5])
-    # TODO: Call a function when the target_element is clicked, with the
 
     def show_defenses(event):
         """
@@ -70,7 +71,7 @@ def modify_message(message, html):
 
         chatData = {'user': game.user._id,  # noqa
                     'type': CONST.CHAT_MESSAGE_TYPES.OOC,  # noqa
-                    'blind': ChatMessage.getWhisperRecipients("GM"),  # noqa
+                    'whisper': ChatMessage.getWhisperRecipients("GM"),  # noqa
                     'speaker': ChatMessage.getSpeaker(),  # noqa
                     'content': content}
         ChatMessage.create(chatData)  # noqa
