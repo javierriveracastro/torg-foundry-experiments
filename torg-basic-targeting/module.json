@@ -10,6 +10,6 @@
   "styles": ["./css/basic-targeting.css"],
   "url": "https://github.com/javierriveracastro/torg-foundry-experiments/tree/master",
   "manifest": "https://raw.githubusercontent.com/javierriveracastro/torg-foundry-experiments/master/torg-basic-targeting/module.json",
-  "download": "",
+  "download": "https://github.com/javierriveracastro/torg-foundry-experiments/blob/master/torg-basic-targeting.zip?raw=true",
   "minimumCoreVersion": "0.7.9"
 }
